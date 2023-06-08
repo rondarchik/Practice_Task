@@ -1,2 +1,1 @@
-# Practice_Task
-Repo for practice test task in Modesen
+# Practice Task | Dovgun Victoria
