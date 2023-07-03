@@ -11,13 +11,20 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 
         <title>{% block title %} {% endblock %}</title>
     </head>
     <body>
         <header>
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit"></button>
+            </form>
+
             <nav >
-                <a class="navbar-brand active" href="{{ url_for('index')}}">Posts</a>
+                <a class="navbar-brand active" href="{{ url_for('index')}}" style="font-size: 24px">Posts</a>
                 <a href="{{ url_for('about')}}">About</a>
             </nav>
         </header>
@@ -40,5 +47,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
     </body>
 </html>
