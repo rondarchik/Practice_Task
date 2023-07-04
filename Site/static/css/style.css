@@ -33,13 +33,13 @@ p {
 }
 
 * {box-sizing: border-box;}
-form {
+form.searcher {
     width: auto;
     float: right;
     margin-right: 206px;
     margin-top: 10px;
 }
-form input {
+form.searcher input {
     width: 250px;
     height: 40px;
     padding-left: 15px;
@@ -52,7 +52,7 @@ form input {
 input:focus {
     width: 300px;
 }
-form button {
+form.searcher button {
     width: 40px;
     height: 40px;
     background: rgb(248, 249, 250);
@@ -60,12 +60,12 @@ form button {
     top: -2px;
     right: 0;
 }
-button:before{
+form.searcher button:before{
     content: "\f002";
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 600;
     color: rgb(137, 137, 137);
 }
-button:focus {
+form.searcher button:focus {
     outline: none !important
 }

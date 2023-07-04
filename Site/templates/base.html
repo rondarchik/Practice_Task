@@ -18,14 +18,13 @@
     </head>
     <body>
         <header>
-            <form action ="/search" method = "post">
+            <form action ="/search" method = "post" class="searcher">
                 <input type="text" placeholder="Search here..." name="search">
                 <button type="submit"></button>
             </form>
 
             <nav >
                 <a class="navbar-brand active" href="{{ url_for('index')}}" style="font-size: 24px">Posts</a>
-                <a href="{{ url_for('about')}}">About</a>
             </nav>
         </header>
 
