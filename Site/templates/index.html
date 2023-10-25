@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <h3>{{ post[1] }}</h3>
+        <span class="badge badge-primary">{{ post[2] }}</span>
+
+        <p><br>Рубрики: </p>
+        {% for item in post[3] %}
+            <ul>
+                <li>{{ item }}</li>
+            </ul>
+        {% endfor %}
+
+        <form action="/delete" method="post">
+            <input type="hidden" name="id" value="{{ post[0] }}">
+            <button class="btn btn-outline-danger" type="submit">Delete</button>
+        </form>
+
+        <hr>
+    {% endfor %}
+{% endblock %}
